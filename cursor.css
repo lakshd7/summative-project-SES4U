@@ -1,0 +1,30 @@
+#cursor {
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  background-color: #83d6fd;
+  border: 1.4px solid #83d6fd;
+  border-radius: 50%;
+  z-index: 500;
+  pointer-events: none;
+  transition: scale ease-out 0.15s, background-color linear 120ms;
+}
+
+#cursor-blur {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  background-color: #609db9a2;
+  border-radius: 50%;
+  filter: blur(85px);
+  z-index: 500;
+  pointer-events: none;
+}
+
+.cursor-normal {
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
