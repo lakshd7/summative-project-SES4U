@@ -1,21 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Raleway";
   overflow-x: hidden;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container {
+  padding-inline: 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 100px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  border: 1px solid rgba(2, 2, 2, 0.3);
+}
+
+nav a {
+  color: black;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 23px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: white;
+}
+
 ul {
   list-style-type: none;
 }
 
-.cursor-pointer {
+.content .cursor-pointer {
   color: white;
   transition: 0.2s;
 }
 
-.cursor-pointer:hover {
+.content .cursor-pointer:hover {
   color: red;
 }
 
